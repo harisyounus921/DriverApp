@@ -1,12 +1,9 @@
 import 'dart:async';
-
 import 'package:drive_app/Login/LoginPage.dart';
-import 'package:drive_app/Signup/signUpPage.dart';
 import 'package:drive_app/main_screen/main_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-
 import '../Global/GlobalPage.dart';
 
 class MySplashScreen extends StatefulWidget {

@@ -1,14 +1,10 @@
-import 'package:drive_app/Signup/CarInfo.dart';
 import 'package:drive_app/Signup/signUpPage.dart';
 import 'package:drive_app/Splash/splash_screen.dart';
-import 'package:drive_app/main_screen/main_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-
 import '../Global/GlobalPage.dart';
 import '../Widgets/ProgressDialoag.dart';
 
@@ -138,7 +134,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
                 _LogInSignUpButton(title: "Login", onTap: (){
                   Validation();
-                  //Navigator.push(context,MaterialPageRoute(builder: (_)=>CarInfoScreen()));
                 }),
                 SizedBox(height: 30,),
                 Align(

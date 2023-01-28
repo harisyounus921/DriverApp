@@ -49,8 +49,6 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white54,
         selectedLabelStyle: const TextStyle(fontSize: 14),
-        //showSelectedLabels: true,
-
         onTap: (index)=>setState(() {
           _currentIndex=index;
         }),

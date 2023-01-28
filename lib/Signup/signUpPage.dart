@@ -1,14 +1,11 @@
 import 'package:drive_app/Signup/CarInfo.dart';
 import 'package:drive_app/Widgets/ProgressDialoag.dart';
-import 'package:drive_app/main_screen/main_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-//import 'package:cloud_firestore/cloud_firestore.dart';
 import '../Global/GlobalPage.dart';
 import '../Login/LoginPage.dart';
 
@@ -109,7 +106,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   decoration: const InputDecoration(
                     labelText: " NAME",
                     hintText: " Enter Your Name",
-                    //enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.grey,),),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.grey, width: 2.0),
                       borderRadius: BorderRadius.all(Radius.circular(32.0)),
@@ -134,7 +130,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   decoration: const InputDecoration(
                     labelText: " EMAIL",
                     hintText: " Enter Your Email",
-                    //enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.grey,),),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.grey, width: 2.0),
                       borderRadius: BorderRadius.all(Radius.circular(32.0)),
@@ -159,7 +154,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   decoration: const InputDecoration(
                     labelText: " PHONE NUMBER",
                     hintText: " Enter Your Phone Number",
-                    //enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.grey,),),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.grey, width: 2.0),
                       borderRadius: BorderRadius.all(Radius.circular(32.0)),
@@ -203,7 +197,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
                 _LogInSignUpButton(title: "Signup", onTap: (){
                   Validation();
-                  //Navigator.push(context,MaterialPageRoute(builder: (_)=>CarInfoScreen()));
                 }),
 
                 SizedBox(height: 30,),

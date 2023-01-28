@@ -1,12 +1,9 @@
 import 'package:drive_app/Global/GlobalPage.dart';
-import 'package:drive_app/main_screen/main_screen.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-
 import '../Splash/splash_screen.dart';
 
 class CarInfoScreen extends StatefulWidget {
@@ -113,7 +110,6 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
                   decoration: const InputDecoration(
                     labelText: " CAR MODEL",
                     hintText: " Enter Your Car Model",
-                    //enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.grey,),),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.grey, width: 2.0),
                       borderRadius: BorderRadius.all(Radius.circular(32.0)),
@@ -138,7 +134,6 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
                   decoration: const InputDecoration(
                     labelText: " CAR COLOR",
                     hintText: " Enter Your Car Color",
-                    //enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.grey,),),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.grey, width: 2.0),
                       borderRadius: BorderRadius.all(Radius.circular(32.0)),
